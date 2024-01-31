@@ -1,26 +1,39 @@
 {
-    "name": "colang-formatter",
-    "displayName": "Colang Formatter",
-    "description": "Syntax highlighting for Colang",
-    "version": "0.0.1",
-    "publisher": "Itamar",
-    "engines": {
-      "vscode": "^1.0.0"
-    },
-    "categories": [
-      "Programming Languages"
-    ],
-    "contributes": {
-      "languages": [{
+  "name": "colang-formatter",
+  "displayName": "Colang Formatter",
+  "description": "Syntax highlighting for Colang",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/aitamar/colang-formatter.git"
+  },
+  "version": "0.0.1",
+  "publisher": "ItamarAri",
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
         "id": "colang",
-        "aliases": ["Colang", "colang"],
-        "extensions": [".co",".colang"]
-      }],
-      "grammars": [{
+        "aliases": [
+          "Colang",
+          "colang"
+        ],
+        "extensions": [
+          ".co",
+          ".colang"
+        ]
+      }
+    ],
+    "grammars": [
+      {
         "language": "colang",
         "scopeName": "source.colang",
         "path": "./syntaxes/colang.tmLanguage.json"
-      }]
+      }
+    ]
   }
-
-  }
+}
